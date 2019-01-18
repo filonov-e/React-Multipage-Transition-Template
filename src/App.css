@@ -7,12 +7,12 @@ header {
   padding-top: 25px;
 }
 
-.Home, .About, .Contacts {
+.Home, .About, .Contacts, .Signup {
   text-align: center;
   min-height: calc(100vh - 50px);
 }
 
-.Home-content, .About-content, .Contacts-content {
+.Home-content, .About-content, .Contacts-content, .Signup-content {
   color: white;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 25px;
@@ -30,6 +30,10 @@ header {
 }
 
 .Contacts {
+  background-color: #F7AF9D;
+}
+
+.Signup {
   background-color: #F7AF9D;
 }
 

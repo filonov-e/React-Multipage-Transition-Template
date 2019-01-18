@@ -16,6 +16,9 @@ class Header extends Component {
           <li>
             <Link to="/contacts">Contacts</Link>
           </li>
+          <li>
+            <Link to="/signup">Sign Up</Link>
+          </li>
         </ul>
       </div>
     );
