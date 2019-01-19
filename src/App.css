@@ -7,12 +7,12 @@ header {
   padding-top: 25px;
 }
 
-.Home, .About, .Contacts, .Signup {
+.Home, .About, .Contacts, .Signup, .Profile {
   text-align: center;
   min-height: calc(100vh - 50px);
 }
 
-.Home-content, .About-content, .Contacts-content, .Signup-content {
+.Home-content, .About-content, .Contacts-content, .Signup-content, .Profile-content {
   color: white;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 25px;
@@ -35,6 +35,10 @@ header {
 
 .Signup {
   background-color: #F7AF9D;
+}
+
+.Profile {
+  background-color: #C08497;
 }
 
 .Header {

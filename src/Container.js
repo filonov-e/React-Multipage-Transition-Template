@@ -7,6 +7,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Home from './Home.js';
 import About from './About.js';
 import Contacts from './Contacts.js';
+import Profile from './Profile.js';
 import Login from './Login.js';
 
 class Container extends Component {
@@ -24,6 +25,7 @@ class Container extends Component {
                 <Route exact path="/" component={ Home } />
                 <Route path="/about" component={ About } />
                 <Route path="/contacts" component={ Contacts } />
+                <Route path="/profile" component={ Profile } />
                 <Route path="/login" component={ Login } />
               </Switch>
             </section>
