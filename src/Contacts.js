@@ -7,7 +7,7 @@ class Contacts extends Component {
 				<header>
 					<h1>Contacts</h1>
 				</header>
-				<div className="Contacts-content">
+				<div className="Contacts-content content">
 					<p>You can contact me using information below</p>
 
 					<h3>E-mail:</h3>
