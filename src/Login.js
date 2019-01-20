@@ -61,8 +61,12 @@ class Login extends Component {
 
 	_confirm = async () => {
 		// login/logout test
-		this._saveUserData(this.state.email)
-		window.location.href = "/profile"
+		if (this.state.login && (this.state.email && this.state.password) || (this.state.name && this.state.email && this.state.password)){
+			this._saveUserData(this.state.email)
+			window.location.href = "/profile"
+		} else {
+			alert("Fill all the fields!");
+		}
 		// login/logout test end
 	}
 	
