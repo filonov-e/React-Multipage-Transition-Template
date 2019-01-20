@@ -46,7 +46,7 @@ class Login extends Component {
 						</div>
 
 						<div
-				         	className="pointer button"
+				         	className="button"
 				          	onClick={() => this.setState({ login: !login })}
 				     	>
 				        	{login
