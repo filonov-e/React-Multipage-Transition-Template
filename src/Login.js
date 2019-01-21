@@ -12,12 +12,12 @@ class Login extends Component {
 	render() {
 		const { login, email, password, name } = this.state
 		return(
-			<div className="Signup">
+			<div className="Login">
 				<header>
 					<h1>{login ? 'Login' : 'Signup'}</h1>
 				</header>
 
-				<div className="Signup-content">
+				<div className="Login-content">
 					<div>
 						{!login && (
 						<input
@@ -55,6 +55,7 @@ class Login extends Component {
 				        </div>
 					</div>
 				</div>
+				<div id="login-bot-img"></div>
 			</div>
 		);
 	}
