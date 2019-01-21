@@ -60,7 +60,7 @@ header {
 
 .Login-content { 
   background-color: rgba(50, 74, 95, 0.7);
-  margin-top: 70px;
+  margin-top: 7vh;
   width: 40vw;
   transform: rotate(0deg);
   animation: animation-login-content 10s infinite;
@@ -69,21 +69,26 @@ header {
 
 #login-bot-img {
   position: absolute;
-  bottom: 0;
+  bottom: calc(0 - 47vh);
   background-image: url('/waves.png');
   background-size: contain;
   background-repeat: repeat-x;
   background-position: 0% 0%;
   width: 100vw;
-  height: 450px;
+  height: 46vh;
   animation: animation-waves 10s infinite;
   animation-timing-function: ease-in-out;
 }
 
 .Login header {
-  padding-top: 200px;
+  padding-top: 19vh;
   color: #071013;
   font-size: 20pt;
+}
+
+.Login input {
+  width: 39vw;
+  max-width: 200px;
 }
 
 .Profile {
@@ -178,4 +183,8 @@ header {
   25% {transform: rotate(5deg);}
   75% {transform: rotate(-5deg);}
   100% {transform: rotate(0deg);}
+}
+
+@media only screen and (max-width: ) {
+  
 }
