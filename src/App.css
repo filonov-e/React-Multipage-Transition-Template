@@ -51,11 +51,31 @@ header {
 }
 
 .Contacts {
-  background-color: #CA2E55;
+  background-image: url(/origami.png);
+  background-color: white;
+  background-position: 0% 0%;
+  animation: animation-origami 60s infinite;
+  animation-timing-function: linear; 
+}
+
+.Contacts header {
+  padding-top: 19vh;
+  color: #071013;
+  font-size: 20pt;
+}
+
+.Contacts-content {
+  color: black;
+  font-weight: 600;
+  font-size: 2vh;
+  margin-top: 7vh;
+  width: 40vw;
 }
 
 .Login {
-  background-color: #DFE0E2;
+  background-color: white;
+  background-image: url(/waves.png);
+  background-size: 90vh;
 }
 
 .Login-content { 
@@ -176,6 +196,11 @@ header {
   0% {background-position: 0% 0%;}
   50% {background-position: 100% 0%;}
   100% {background-position: 0% 0%;}
+}
+
+@keyframes animation-origami {
+  0% {background-position: 0% 0%;}
+  100% {background-position: 99% 0%;}
 }
 
 @keyframes animation-login-content {
