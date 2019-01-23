@@ -89,11 +89,11 @@ header {
 
 #login-bot-img {
   position: absolute;
-  bottom: calc(0 - 47vh);
+  bottom: 0;
   background-image: url('/waves.png');
   background-size: contain;
   background-repeat: repeat-x;
-  background-position: 0% 0%;
+  background-position: 0% 100px;
   width: 100vw;
   height: 46vh;
   animation: animation-waves 10s infinite;
@@ -193,9 +193,9 @@ header {
 }
 
 @keyframes animation-waves {
-  0% {background-position: 0% 0%;}
-  50% {background-position: 100% 0%;}
-  100% {background-position: 0% 0%;}
+  0% {background-position: 0% 100px;}
+  50% {background-position: 100% 100px;}
+  100% {background-position: 0% 100px;}
 }
 
 @keyframes animation-origami {
