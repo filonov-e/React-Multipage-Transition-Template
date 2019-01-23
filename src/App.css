@@ -35,7 +35,7 @@ header {
 
 .Home-content, .About-content, .Contacts-content, .Login-content, .Profile-content {
   color: white;
-  background-color: rgba(235, 81, 96, 0.4);
+  background-color: rgba(235, 81, 96, 0.6);
   border-radius: 25px;
   margin: 15px auto 0 auto;
   padding: 25px;
