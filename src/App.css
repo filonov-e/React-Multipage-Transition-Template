@@ -53,6 +53,7 @@ header {
 .Contacts {
   background-image: url(/origami.png);
   background-color: white;
+  background-size: 60px;
   background-position: 0% 0%;
   animation: animation-origami 60s infinite;
   animation-timing-function: linear; 
@@ -67,7 +68,7 @@ header {
 .Contacts-content {
   color: black;
   font-weight: 600;
-  font-size: 2vh;
+  font-size: 3vh;
   margin-top: 7vh;
   width: 40vw;
 }
