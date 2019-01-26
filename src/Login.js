@@ -11,8 +11,9 @@ class Login extends Component {
 
 	render() {
 		const { login, email, password, name } = this.state
+
 		return(
-			<div className="Login">
+			<div className="Login" id="login">
 				<header>
 					<h1>{login ? 'Login' : 'Signup'}</h1>
 				</header>

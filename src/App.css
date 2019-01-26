@@ -77,6 +77,8 @@ header {
   background-color: white;
   background-image: url(/waves.png);
   background-size: 90vh;
+  animation: animation-waves-1 20s infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .Login-content { 
@@ -103,7 +105,7 @@ header {
 }
 
 .Login header {
-  padding-top: 19vh;
+  padding-top: 16vh;
   color: #071013;
   font-size: 20pt;
 }
@@ -198,6 +200,15 @@ header {
   0% {background-position: 0% 100px;}
   50% {background-position: 100% 100px;}
   100% {background-position: 0% 100px;}
+}
+
+@keyframes animation-waves-1 {
+  0% {background-position: 0% 0%;}
+  20% {background-position: 25% -50%;}
+  40% {background-position: 60% 0%;}
+  60% {background-position: 40% -50%;}
+  80% {background-position: 25% 0%;}
+  100% {background-position: 0% 0%;}
 }
 
 @keyframes animation-origami {
