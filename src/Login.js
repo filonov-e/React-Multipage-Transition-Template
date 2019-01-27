@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { AUTH_TOKEN } from './constants'
+import { createStore } from 'redux'
 
 class Login extends Component {
 	state = {
