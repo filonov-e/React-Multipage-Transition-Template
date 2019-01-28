@@ -9,6 +9,7 @@ import About from './About.js';
 import Contacts from './Contacts.js';
 import Profile from './Profile.js';
 import Login from './Login.js';
+import Counter from './Counter.js';
 
 class Container extends Component {
   render() {
@@ -27,6 +28,7 @@ class Container extends Component {
                 <Route path="/contacts" component={ Contacts } />
                 <Route path="/profile" component={ Profile } />
                 <Route path="/login" component={ Login } />
+                <Route path="/counter" component={ Counter } />
               </Switch>
             </section>
           </CSSTransition>
