@@ -50,12 +50,12 @@ class Login extends Component {
 						</div>	
 					</div>
 					<div className="row">
-						<div className="button col-md mx-4 align-middle" onClick={() => this._confirm()}>
+						<div className="button col-md" onClick={() => this._confirm()}>
 							{login ? 'login' : 'create account'}
 						</div>
 
 						<div
-				         	className="button col-md mx-4"
+				         	className="button col-md"
 				          	onClick={() => this.setState({ login: !login })}
 				     	>
 				        	{login
