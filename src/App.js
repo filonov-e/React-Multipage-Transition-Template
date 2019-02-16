@@ -6,8 +6,13 @@ import Header from "./Header";
 import Container from "./Container";
 
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
+  componentWillMount() {
+    require('../node_modules/bootstrap/dist/css/bootstrap.min.css');
+  }
+
   render() {
     return (
       <Router>

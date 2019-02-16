@@ -14,41 +14,48 @@ class Login extends Component {
 		const { login, email, password, name } = this.state
 
 		return(
-			<div className="Login" id="login">
-				<header>
-					<h1>{login ? 'Login' : 'Signup'}</h1>
-				</header>
+			<div className="Login container-fluid" id="login">
+				<div className="row header">
+					<div className="col-md h1">{login ? 'Login' : 'Signup'}</div>
+				</div>
 
-				<div className="Login-content">
-					<div>
+				<div className="Login-content container col-md-6">
+					<div className="row">
 						{!login && (
-						<input
-							value={name}
-							onChange={e => this.setState({ name: e.target.value })} 
-							type="text"
-							placeholder="Your name"
-						/>	
+							<div className="col-md">
+								<input
+									value={name}
+									onChange={e => this.setState({ name: e.target.value })} 
+									type="text"
+									placeholder="Your name"
+								/>	
+							</div>
 						)}
-						<input
-				            value={email}
-				            onChange={e => this.setState({ email: e.target.value })}
-				            type="text"
-				            placeholder="Your email address"
-				       	/>
-				       	<input
-				            value={password}
-				            onChange={e => this.setState({ password: e.target.value })}
-				            type="password"
-				            placeholder={login ? "Password" : "Choose a safe password"}
-				   		/>	
+						
+						<div className="col-md">
+							<input
+					            value={email}
+					            onChange={e => this.setState({ email: e.target.value })}
+					            type="text"
+					            placeholder="Your email address"
+					       	/>
+						</div>
+						<div className="col-md">
+							<input
+					            value={password}
+					            onChange={e => this.setState({ password: e.target.value })}
+					            type="password"
+					            placeholder={login ? "Password" : "Choose a safe password"}
+					   		/>
+						</div>	
 					</div>
-					<div>
-						<div className="button" onClick={() => this._confirm()}>
+					<div className="row">
+						<div className="button col-md mx-4 align-middle" onClick={() => this._confirm()}>
 							{login ? 'login' : 'create account'}
 						</div>
 
 						<div
-				         	className="button"
+				         	className="button col-md mx-4"
 				          	onClick={() => this.setState({ login: !login })}
 				     	>
 				        	{login
@@ -57,7 +64,6 @@ class Login extends Component {
 				        </div>
 					</div>
 				</div>
-				<div id="login-bot-img"></div>
 			</div>
 		);
 	}

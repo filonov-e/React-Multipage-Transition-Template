@@ -6,11 +6,11 @@ class Profile extends Component {
     const authToken = localStorage.getItem(AUTH_TOKEN)
 
     return(
-      <div className="Profile">
-        <header>
-          <h1>Welcome, {authToken}</h1>
-        </header>
-        <div className="Profile-content">
+      <div className="Profile container-fluid">
+        <div className="row header">
+          <div className="col-md h1">Welcome, {authToken}</div>
+        </div>
+        <div className="Profile-content container col-md-8">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio totam consequuntur, asperiores, dolor voluptatum nulla culpa alias fugiat nesciunt, facilis, amet! Ducimus officiis vitae, aliquid omnis, saepe repudiandae consectetur iure!
         </div>
       </div>
