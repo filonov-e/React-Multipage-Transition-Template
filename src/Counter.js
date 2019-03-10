@@ -1,5 +1,3 @@
-import { createStore } from 'redux'
-
 import React, { Component } from 'react';
 
 class Counter extends Component {
@@ -36,7 +34,6 @@ class Counter extends Component {
 		var sum = 0;
 		var max = -1;
 		for (var i = 0; i < 100; i++) {
-			var t1 = console.time("waitForOneThousandMs");
 			this.waitForOneThousandMs(10);
 			var t2 = console.timeEnd("waitForOneThousandMs");
 			

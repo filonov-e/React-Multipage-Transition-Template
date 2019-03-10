@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 class About extends Component {
   render() {
@@ -34,6 +35,12 @@ class About extends Component {
               </div>
             </div>
           </div>
+        </div>
+        <div className="arrow_right">
+          <Link to="/contacts"><img width="64px" src="/Arrow-right.png" alt=""/></Link>
+        </div>
+        <div className="arrow_left">
+          <Link to="/"><img width="64px" src="/Arrow-left.png" alt=""/></Link>
         </div>
       </div>
     );

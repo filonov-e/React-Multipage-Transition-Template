@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { AUTH_TOKEN } from './constants'
-import { createStore } from 'redux'
+import { Link } from "react-router-dom";
 
 class Login extends Component {
 	state = {
@@ -64,6 +64,9 @@ class Login extends Component {
 				        </div>
 					</div>
 				</div>
+				<div className="arrow_left">
+		          <Link to="/contacts"><img width="64px" src="/Arrow-left.png" alt=""/></Link>
+		        </div>
 			</div>
 		);
 	}

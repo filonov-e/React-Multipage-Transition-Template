@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 class Contacts extends Component {
 	render() {
@@ -17,6 +18,12 @@ class Contacts extends Component {
 						<div className="col-md h5 text-left">+358449164716</div>
 					</div>
 				</div>
+				<div className="arrow_right">
+		          <Link to="/login"><img width="64px" src="/Arrow-right.png" alt=""/></Link>
+		        </div>
+		        <div className="arrow_left">
+		          <Link to="/about"><img width="64px" src="/Arrow-left.png" alt=""/></Link>
+		        </div>
 			</div>
 		);
 	}
