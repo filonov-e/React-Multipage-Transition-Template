@@ -7,8 +7,20 @@ class Home extends Component {
     if (window.innerWidth >= 800) {
       var x = event.clientX;
       var y = event.clientY;
+
+      if (y <= 100) {
+        document.getElementById("moving-1").style.transition = "transform 0.5s ease-out";
+        document.getElementById("moving-2").style.transition = "transform 0.5s ease-out";
+        x = window.innerWidth/2
+        y = window.innerHeight/2;
+      } else {
+        document.getElementById("moving-1").style.transition = "None";
+        document.getElementById("moving-2").style.transition = "None";
+      }
+
       var newposX = (x - window.innerWidth/2)/30;
       var newposY = (y - window.innerHeight/2 - 50)/30;
+      
       document.getElementById("moving-1").style.transform = "translate3d("+newposX+"px,"+newposY+"px,0px)";
       document.getElementById("moving-2").style.transform = "translate3d("+newposX+"px,"+newposY+"px,0px)";
     }
